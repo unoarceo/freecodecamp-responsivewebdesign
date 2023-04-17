@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">
+    This is the freecodecamp.org Survey Form.
+</p>
+<form id="survey-form">
+    <label id="name-label" for="name">Name <input id="name" name="name" type="text" required
+                                                  placeholder="Enter your name"/></label>
+    <label id="email-label" for="email">Email <input id="email" name="email" type="email" required
+                                                     pattern="[a-z0-5]{8,}" placeholder="Enter your email"/></label>
+    <label id="number-label" for="number">Number <input id="number" name="number" type="number" min="18" max="100"
+                                                        placeholder="Enter a number"/></label>
+    <label>Select an option <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+    </select>
+    </label>
+    <label><input type="radio" name="radio" value="definitely"/> Definitely</label>
+    <label><input type="radio" name="radio" value="maybe"> Maybe</label>
+        <label><input type="radio" name="radio" value="notsure"> Not Sure</label>
+            <label><input type="checkbox" value="python"/> Python</label>
+            <label><input type="checkbox" value="javascript"/> Javascript</label>
+                <label><input type="checkbox" value="csharp"/> C#</label>
+                    <label><input type="checkbox" value="java"/> Java</label>
+                        <label><input type="checkbox" value="swift"/> SWIFT</label>
+                            <label>Any comments or suggestions?
+                                <textarea></textarea>
+                            </label>
+                            <input id="submit" type="submit" value="Submit"/>
+</form>
+</body>
+</html>
